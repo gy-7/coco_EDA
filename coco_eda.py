@@ -1,34 +1,3 @@
-# coco2017 Dataset EDA
-
-Github仓库：[gy-7/coco_EDA (github.com)](https://github.com/gy-7/coco_EDA) 
-
-对coco数据集的分析，近期忙着写论文，空余时间很少能写博文了。
-
-EDA的代码放在结尾了，Github仓库里也有。仓库里还有其他的一些EDA分析，不定时更新。
-
-
-
-#### 训练集所有类别的数量分布情况：
-
-![coco_train_class_distribution](https://gy77-blog.oss-cn-hangzhou.aliyuncs.com/img/coco_train_class_distribution.png)
-
-#### 训练集所有类别的尺寸分布情况：
-
-![coco_train_size_distribution](https://gy77-blog.oss-cn-hangzhou.aliyuncs.com/img/coco_train_size_distribution.png)
-
-#### 验证集所有类别的数量分布情况：
-
-![coco_val_class_distribution](https://gy77-blog.oss-cn-hangzhou.aliyuncs.com/img/coco_val_class_distribution.png)
-
-#### 验证集所有类别的尺寸分布情况：
-
-![coco_val_size_distribution](https://gy77-blog.oss-cn-hangzhou.aliyuncs.com/img/coco_val_size_distribution.png)
-
-
-
-#### EDA代码：
-
-```python
 import os
 import seaborn as sns
 import pycocotools.coco
@@ -250,5 +219,3 @@ if __name__ == '__main__':
     run_plot_coco_class_distribution(coco_val, ".\\EDA")
     run_plot_coco_size_distribution(coco_val, ".\\EDA")
     print("-" * 50)
-```
-
